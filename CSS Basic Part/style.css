@@ -4,8 +4,9 @@
     /* color */
     --pink: #e84393;
     --dark--charcoal: #333;
-    --dark--gray:#666;
+    --dark--gray: #666;
 }
+
 /* variables css end */
 
 
@@ -82,4 +83,60 @@ header .fa-bars {
     cursor: pointer;
     border: .1rem solid rgba(0, 0, 0, .3);
     display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media screen and (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header .fa-bars {
+        display: block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: .1rem solid rgba(0, 0, 0, .1);
+        display: block;
+    }
+}
+
+@media screen and (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+
+
 }
