@@ -376,17 +376,20 @@ header .fa-bars {
     color: var(--pink);
     font-size: 2rem;
 }
-.review .box-container .box p{
+
+.review .box-container .box p {
     color: #999;
     font-size: 1.5rem;
     line-height: 1.5;
     padding-top: 2rem;
-} 
+}
+
 .review .box-container .box .user {
     display: flex;
     align-items: center;
     padding-top: 2rem;
 }
+
 .review .box-container .box .user img {
     height: 6rem;
     width: 6rem;
@@ -394,38 +397,44 @@ header .fa-bars {
     object-fit: cover;
     margin-right: 1rem;
 }
-.review .box-container .box .user h3{
+
+.review .box-container .box .user h3 {
     font-size: 2rem;
     color: #333;
 }
-.review .box-container .box .user span{
+
+.review .box-container .box .user span {
     font-size: 1.5rem;
     color: #999;
 }
 
 
 
-.contact .row{
+.contact .row {
     display: flex;
     flex-wrap: wrap-reverse;
     gap: 1.5rem;
     align-items: center;
 }
-.contact .row form{
+
+.contact .row form {
     flex: 1 1 40rem;
     padding: 1rem 4.5rem;
-    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1) ;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
     border: .1rem solid rgba(0, 0, 0, .1);
     background: #fff;
     border-radius: .5rem;
 }
-.contact .row .image{
+
+.contact .row .image {
     flex: 1 1 40rem;
 }
+
 .contact .row .image img {
     width: 100%;
 }
-.contact .row form .box{
+
+.contact .row form .box {
     padding: 1rem;
     font-size: 1.7rem;
     color: #333;
@@ -435,13 +444,65 @@ header .fa-bars {
     margin: .7rem 0;
     width: 100%;
 }
-.contact .row form .box:focus{
+
+.contact .row form .box:focus {
     border-color: var(--pink);
 }
-.contact .row form textarea{
+
+.contact .row form textarea {
     height: 15rem;
     resize: none;
 }
+
+
+
+.footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .box-container .box {
+    flex: 1 1 25rem;
+}
+
+.footer .box-container .box h3 {
+    color: #333;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+    display: block;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover {
+    color: var(--pink);
+    text-decoration: underline;
+}
+.footer .box-container .box img{
+    margin-top: 1rem;
+    width: 25rem;
+    height: 5rem;
+}
+.footer .credit {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #333;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+.footer .credit span {
+    color: var(--pink);
+}
+
+
+
 
 
 
