@@ -6,6 +6,7 @@
     --dark--charcoal: #333;
     --dark--gray: #666;
     --white: #fff;
+    --black: #000000;
 }
 
 /* variables css end */
@@ -63,7 +64,7 @@ section {
 
 
 
-
+/* header css */
 header {
     position: fixed;
     top: 0;
@@ -123,7 +124,7 @@ header .fa-bars {
 
 
 
-
+/* home css */
 .home {
     display: flex;
     align-items: center;
@@ -137,7 +138,7 @@ header .fa-bars {
     max-width: 50rem;
 }
 
-.home .content h3 {
+.home .content h1 {
     font-size: 6rem;
     color: var(--dark--charcoal);
 }
@@ -151,14 +152,14 @@ header .fa-bars {
 
 .home .content p {
     font-size: 1.5rem;
-    color: #999;
+    color: var(--black);
     padding: 1rem 0;
     line-height: 1.5;
 }
 
 
 
-
+/* about css */
 .about .row {
     display: flex;
     align-items: center;
@@ -182,7 +183,7 @@ header .fa-bars {
     object-fit: cover;
 }
 
-.about .row .video-container h3 {
+.about .row .video-container h2 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -202,19 +203,19 @@ header .fa-bars {
 
 .about .row .content h3 {
     font-size: 3rem;
-    color: #333;
+    color: var(--dark--charcoal);
 }
 
 .about .row .content p {
     font-size: 1.5rem;
-    color: #999;
+    color: var(--black);
     padding: .5rem 0;
     padding-top: 1rem;
     line-height: 1.5;
 }
 
 
-
+/* icon css */
 .icon-container {
     background: #eee;
     display: flex;
@@ -240,7 +241,7 @@ header .fa-bars {
 }
 
 .icon-container .icons h3 {
-    color: #333;
+    color:var(--dark--charcoal);
     padding-bottom: .5rem;
     font-size: 1.5rem;
 }
@@ -251,7 +252,7 @@ header .fa-bars {
 }
 
 
-
+/* products css */
 .products .box-container {
     display: flex;
     flex-wrap: wrap;
@@ -311,7 +312,7 @@ header .fa-bars {
     font-size: 2rem;
     width: 50%;
     background: var(--pink);
-    color: #fff;
+    color: var(--white);
 }
 
 .products .box-container .box .images .icons .cart-btn {
@@ -321,7 +322,7 @@ header .fa-bars {
 }
 
 .products .box-container .box .images .icons a:hover {
-    background: #333;
+    background: var(--dark--charcoal);
 }
 
 .products .box-container .box .content {
@@ -331,7 +332,7 @@ header .fa-bars {
 
 .products .box-container .box .content h3 {
     font-size: 2.5rem;
-    color: #333;
+    color: var(--dark--charcoal);
 }
 
 .products .box-container .box .content .price {
@@ -343,13 +344,14 @@ header .fa-bars {
 
 .products .box-container .box .content span {
     font-size: 1.5rem;
-    color: #999;
+    color: var(--black);
     font-weight: lighter;
     text-decoration: line-through;
 }
 
 
 
+/* review css */
 .review .box-container {
     display: flex;
     flex-wrap: wrap;
@@ -378,7 +380,7 @@ header .fa-bars {
 }
 
 .review .box-container .box p {
-    color: #999;
+    color: black;
     font-size: 1.5rem;
     line-height: 1.5;
     padding-top: 2rem;
@@ -398,18 +400,19 @@ header .fa-bars {
     margin-right: 1rem;
 }
 
-.review .box-container .box .user h3 {
+.review .box-container .box .user h4 {
     font-size: 2rem;
-    color: #333;
+    color: var(--dark--charcoal);
 }
 
 .review .box-container .box .user span {
     font-size: 1.5rem;
-    color: #999;
+    color: var(--black);
 }
 
 
 
+/* contact css */
 .contact .row {
     display: flex;
     flex-wrap: wrap-reverse;
@@ -422,7 +425,7 @@ header .fa-bars {
     padding: 1rem 4.5rem;
     box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
     border: .1rem solid rgba(0, 0, 0, .1);
-    background: #fff;
+    background: var(--white);
     border-radius: .5rem;
 }
 
@@ -437,7 +440,7 @@ header .fa-bars {
 .contact .row form .box {
     padding: 1rem;
     font-size: 1.7rem;
-    color: #333;
+    color: var(--dark--charcoal);
     text-transform: none;
     border: .1rem solid rgba(0, 0, 0, .1);
     border-radius: .5rem;
@@ -456,6 +459,7 @@ header .fa-bars {
 
 
 
+/* footer css */
 .footer .box-container {
     display: flex;
     flex-wrap: wrap;
@@ -466,15 +470,15 @@ header .fa-bars {
     flex: 1 1 25rem;
 }
 
-.footer .box-container .box h3 {
-    color: #333;
+.footer .box-container .box h5 {
+    color:var(--dark--charcoal);
     font-size: 2.5rem;
     padding: 1rem 0;
 }
 
 .footer .box-container .box a {
     display: block;
-    color: #666;
+    color: var(--dark--gray);
     font-size: 1.5rem;
     padding: 1rem 0;
 }
@@ -483,22 +487,25 @@ header .fa-bars {
     color: var(--pink);
     text-decoration: underline;
 }
-.footer .box-container .box img{
+
+.footer .box-container .box img {
     margin-top: 1rem;
     width: 25rem;
     height: 5rem;
 }
+
 .footer .credit {
     text-align: center;
     padding: 1.5rem;
     margin-top: 1.5rem;
     padding-top: 2.5rem;
     font-size: 2rem;
-    color: #333;
+    color: var(--dark--charcoal);
     border-top: .1rem solid rgba(0, 0, 0, .1);
 }
+
 .footer .credit span {
-    color: var(--pink);
+    color: var(--black);
 }
 
 
